@@ -1040,7 +1040,6 @@ void echoParams(){
 }
 
 void usage(){
-   printf("%s\n",BANNER);
    printf("\n");
    printf("Usage: \"zfind options\"\n");
    printf("  e.g. \"zfind B3/S23 p3 k1 w6 v\" searches Life (rule B3/S23) for\n");
@@ -1082,16 +1081,17 @@ void usage(){
    printf("  r    uses randomized search order\n") ;
    printf("  n    uses popcount search order\n") ;
    printf("\n");
-// printf("  e FF uses rows in the file FF as the initial rows for the search\n");
-// printf("       (use the companion Golly python script to easily generate the\n");
-// printf("       initial row file)\n");
-// printf("\n");
-// printf("\"zfind command file\" reloads the state from the specified file\n");
-   printf("and performs the command. Available commands: \n");
-// printf("  s    resumes search from the loaded state\n");
-// printf("  p    outputs the pattern representing the loaded state\n");
+   printf("  e FF uses rows in the file FF as the initial rows for the search\n");
+   printf("       (use the companion Golly python script to easily generate the\n");
+   printf("       initial row file)\n");
+   printf("\n");
    printf("  RNNN restricts memory usage to NNN megabytes\n") ;
    printf("  CNNN uses about NNN megabytes for lookahead cache\n") ;
+// printf("\n");
+// printf("\"zfind command file\" reloads the state from the specified file\n");
+// printf("and performs the command. Available commands: \n");
+// printf("  s    resumes search from the loaded state\n");
+// printf("  p    outputs the pattern representing the loaded state\n");
 }
 
 int main(int argc, char *argv[]){
