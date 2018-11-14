@@ -19,7 +19,7 @@
 #define FILEVERSION ((unsigned long) 2016122101)  //yyyymmddnn, same as last qfind release (differs from the above)
 
 #define MAXPERIOD 30
-#define MAXWIDTH 10  // increasing this requires a few other changes
+#define MAXWIDTH 16  // Limited by uint16_t used for row objects and look up tables
 #define MIN_DUMP 20
 #define DEFAULT_DEPTH_LIMIT 2000
 #define NUM_PARAMS 15
